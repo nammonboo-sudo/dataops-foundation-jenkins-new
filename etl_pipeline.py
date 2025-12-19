@@ -173,7 +173,7 @@ def deploy_to_database(fact_table, dim_tables):
         # Verify deployment
         print("\n🔍 Verifying deployment...")
         with engine.connect() as connection:
-            for table_name in list(dim_tables.keys()) + ['loans_fact']:
+            for table_name in list(dim_tables.keys()) + ['loans_fact_nammon']:
                 count_result = connection.execute(text(f"SELECT COUNT(*) FROM {table_name}"))
                 count = count_result.fetchone()[0]
                 print(f"   📊 {table_name}: {count:,} records in database")
