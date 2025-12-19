@@ -3,7 +3,7 @@ pipeline {
     
     environment {
         // Database configuration
-        DB_SERVER = '136.111.96.104'
+        DB_SERVER = '10.18.21.311'
         DB_NAME = 'TestDB'
         DB_USERNAME = 'SA'
         DB_PASSWORD = credentials('mssql-password')  // ต้องสร้างใน Jenkins credentials
