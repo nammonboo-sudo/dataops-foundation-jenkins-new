@@ -139,7 +139,7 @@ def deploy_to_database(fact_table, dim_tables):
     print("\n🚀 Deploying to Database...")
     
     # Database configuration
-    server = "mssql.minddatatech.com"
+    server = "36.111.96.104"
     database = 'TestDB'
     username = 'SA'
     password = os.getenv('DB_PASSWORD', 'Passw0rd123456')
